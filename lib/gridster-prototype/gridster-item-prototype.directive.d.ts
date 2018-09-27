@@ -1,4 +1,4 @@
-import { Directive, ElementRef, EventEmitter, OnInit, OnDestroy, NgZone } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, OnInit, OnDestroy, NgZone, Input, Output } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { GridsterPrototypeService } from './gridster-prototype.service';
 import { GridListItem } from '../gridList/GridListItem';
@@ -10,13 +10,13 @@ export declare class GridsterItemPrototypeDirective implements OnInit, OnDestroy
     private zone;
     private elementRef;
     private gridsterPrototype;
-    @Output() drop = new EventEmitter();
-    @Output() start = new EventEmitter();
-    @Output() cancel = new EventEmitter();
-    @Output() enter = new EventEmitter();
-    @Output() out = new EventEmitter();
+    @Output() drop: EventEmitter<{}>;
+    @Output() start: EventEmitter<{}>;
+    @Output() cancel: EventEmitter<{}>;
+    @Output() enter: EventEmitter<{}>;
+    @Output() out: EventEmitter<{}>;
     @Input() data: any;
-    @Input() config: any = {};
+    @Input() config: any;
     x: number;
     y: number;
     @Input() w: number;
@@ -29,8 +29,8 @@ export declare class GridsterItemPrototypeDirective implements OnInit, OnDestroy
     @Input() hMd: number;
     @Input() hLg: number;
     @Input() hXl: number;
-    @Input() variableHeight: boolean = false;
-    @Input() variableHeightContainToRow: boolean = false;
+    @Input() variableHeight: boolean;
+    @Input() variableHeightContainToRow: boolean;
     positionX: number;
     positionY: number;
     autoSize: boolean;
