@@ -1,4 +1,4 @@
-import { Directive, ElementRef, EventEmitter, OnInit, OnDestroy, NgZone, Input, Output } from '@angular/core';
+import { ElementRef, EventEmitter, OnInit, OnDestroy, NgZone, Directive, Output, Input } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { GridsterPrototypeService } from './gridster-prototype.service';
 import { GridListItem } from '../gridList/GridListItem';

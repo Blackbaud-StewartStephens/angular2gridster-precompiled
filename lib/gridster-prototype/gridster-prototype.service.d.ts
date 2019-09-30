@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { GridsterService } from '../gridster.service';
 import { GridsterItemPrototypeDirective } from './gridster-item-prototype.directive';
 import { DraggableEvent } from '../utils/DraggableEvent';
+import { Injectable } from '@angular/core';
+
 @Injectable()
 export declare class GridsterPrototypeService {
     private isDragging;

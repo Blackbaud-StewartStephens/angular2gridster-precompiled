@@ -5,6 +5,8 @@ import { IGridsterDraggableOptions } from './IGridsterDraggableOptions';
 import { GridListItem } from './gridList/GridListItem';
 import { GridsterComponent } from './gridster.component';
 import { GridsterOptions } from './GridsterOptions';
+import { Injectable } from '@angular/core';
+@Injectable()
 export declare class GridsterService {
     $element: HTMLElement;
     gridList: GridList;
