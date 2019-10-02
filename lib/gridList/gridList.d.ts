@@ -21,9 +21,9 @@ import { IGridsterOptions } from '../IGridsterOptions';
  *
  * An item is an object of structure:
  * {
- *   w: 3, h: 1,
- *   x: 0, y: 1
- * }
+   *   w: 3, h: 1,
+   *   x: 0, y: 1
+   * }
  */
 export declare class GridList {
     items: Array<GridListItem>;

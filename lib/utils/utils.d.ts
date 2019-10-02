@@ -20,5 +20,4 @@ export declare const utils: {
         top: number;
         left: number;
     };
-    getScrollableContainer(node: any): any;
 };

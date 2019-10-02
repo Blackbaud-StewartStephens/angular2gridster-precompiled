@@ -1,4 +1,7 @@
-import { OnInit, AfterContentInit, OnDestroy, ElementRef, NgZone, EventEmitter, Input, Output, ViewChild, HostBinding, Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import {
+    Component, OnInit, AfterContentInit, OnDestroy, ElementRef, ViewChild, NgZone,
+    Input, Output, EventEmitter, ChangeDetectionStrategy, HostBinding, ViewEncapsulation
+} from '@angular/core';
 import { GridsterService } from './gridster.service';
 import { IGridsterOptions } from './IGridsterOptions';
 import { IGridsterDraggableOptions } from './IGridsterDraggableOptions';
@@ -14,30 +17,29 @@ import { GridsterOptions } from './GridsterOptions';
         <div class="inner"></div>
       </div>
     </div>`,
-    styles: [
-        `
-            ngx-gridster {
-                position: relative;
-                display: block;
-                left: 0;
-                width: 100%;
-            }
+    styles: [`
+    ngx-gridster {
+        position: relative;
+        display: block;
+        left: 0;
+        width: 100%;
+    }
 
-            ngx-gridster.gridster--dragging {
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
+    ngx-gridster.gridster--dragging {
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
-            ngx-gridster .gridster-container {
-                position: relative;
-                width: 100%;
-                list-style: none;
-                -webkit-transition: width 0.2s, height 0.2s;
-                transition: width 0.2s, height 0.2s;
-            }
+    ngx-gridster .gridster-container {
+        position: relative;
+        width: 100%;
+        list-style: none;
+        -webkit-transition: width 0.2s, height 0.2s;
+        transition: width 0.2s, height 0.2s;
+    }
 
     ngx-gridster .position-highlight {
         display: block;

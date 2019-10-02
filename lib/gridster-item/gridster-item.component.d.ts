@@ -1,4 +1,4 @@
-import { OnInit, ElementRef, EventEmitter, SimpleChanges, OnChanges, OnDestroy, AfterViewInit, NgZone, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, ViewChild, HostBinding } from '@angular/core';
+import { OnInit, ElementRef, EventEmitter, SimpleChanges, OnChanges, OnDestroy, AfterViewInit, NgZone, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, HostBinding, ViewChild } from '@angular/core';
 import { GridsterService } from '../gridster.service';
 import { GridListItem } from '../gridList/GridListItem';
 @Component({
