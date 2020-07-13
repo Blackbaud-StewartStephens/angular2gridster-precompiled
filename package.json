@@ -64,7 +64,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
     "ng-packagr": "^3.0.3",
-    "standard-version": "^4.4.0",
+    "standard-version": "^8.0.1",
     "ts-node": "~5.0.1",
     "tsickle": ">=0.25.5",
     "tslib": "^1.7.1",
